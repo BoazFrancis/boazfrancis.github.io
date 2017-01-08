@@ -1,10 +1,10 @@
 *{margin:0;padding:0}
 html, body{height: 100%;width: 100%;}
 body{font-family: "Century Gothic";background-color: whitesmoke;text-align:center;}
-.wrapper{height: 100%; width: 100%;}
+.wrapper{max-height: 100%; width: 100%; padding: 5vw 0;}
 a {text-decoration: none;font-size: 4vw;display: inline-block;height: 0;}
 .iconWrap{display:inline-block;float: left;width: calc(100% / 3);}
 .icon {width: 4vw;height: 4vw;margin: 4vw 0;}
 h1 {margin: 2vw 0 2vw;font-weight: bold;font-size: 4vw;}
 .icons{margin: 0 auto;width: 50%;height: 10vw;}
-.profile{height: 6vw;width: 6vw;}
+.profile{height: 12vw;width: 12vw;border-radius: 50%;margin-top: 2%;}
