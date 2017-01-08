@@ -1,7 +1,7 @@
 *{margin:0;padding:0}
 html, body{height: 100%;width: 100%;}
 body{font-family: "Century Gothic";background-color: whitesmoke;text-align:center;}
-.wrapper{max-height: 100%; width: 100%; padding: 5vw 0;}
+.wrapper{max-height: 100%; width: 100%; padding: 5vw 0;display: none;}
 a {text-decoration: none;font-size: 4vw;display: inline-block;height: 0px;}
 .iconWrap{display:inline-block;float: left;width: calc(100% / 3);}
 .icon {width: 4vw;height: 4vw;margin: 1vw 0;}
