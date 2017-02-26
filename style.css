@@ -1,14 +1,19 @@
 *{margin:0;padding:0}
 html, body{height: 100%;width: 100%;}
-body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;background-color: white;text-align:center;}
-.bg { 
+body{font-family: Raleway;background-color: white;text-align:center;background-image: url("media/bg.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;}
+/*.bg { 
     background-image: url("media/bg.jpg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-}
+}*/
 .bg1 {
   height: 100%;
   background: linear-gradient(#e8e8e8, #e0dfde);
@@ -30,7 +35,7 @@ body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;backgroun
 .header {
   margin-top: 10%;
 }
-.title{font-size: 6vw; color: white; font-weight: bold; text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);}
+.title{font-size: 6vw; color: #f9f9f9; font-weight: bold; text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);}
 
 .description {
   margin-top: 2vw;
@@ -40,7 +45,7 @@ body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;backgroun
 .socialmediaicons {
   width: 100%;
   height: auto;
-  margin-top: 2vw;
+  margin: 2vw 0;
 }
 .fa {
   padding: 1.3vw;
