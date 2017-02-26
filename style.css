@@ -14,6 +14,8 @@ body{font-family: Raleway;background-color: white;text-align:center;background-i
     background-size: cover;
     background-color: transparent;
 }*/
+.profile{height: 12vw;width: 12vw;border-radius: 50%;margin-top: 2%;}
+
 .bg1 {
   height: 100%;
   background: linear-gradient(#e8e8e8, #e0dfde);
