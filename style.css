@@ -76,7 +76,9 @@ body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;backgroun
   background: #2dcc0c;
 }
 .cv {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
+  color: darkcyan;
+  font-weight: 300;
 }
 .displayBox {
   margin-top: 2vw;
