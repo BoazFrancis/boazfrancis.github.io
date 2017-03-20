@@ -1,21 +1,16 @@
+@font-face{font-family:"Raleway-Light";src:url(Raleway-Light.ttf)}
 *{margin:0;padding:0}
 html, body{height: 100%;width: 100%;}
-body{font-family: Raleway;background-color: white;text-align:center;background-image: url("media/bg.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;}
-/*.bg { 
+body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;background-color: white;text-align:center;}
+.bg { 
     background-image: url("media/bg.jpg");
-    height: 100%; 
+    min-height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-}*/
-.profile{height: 12vw;width: 12vw;border-radius: 50%;margin-top: 2%;}
-
+    background-position: 50% 50% ;
+}
 .bg1 {
   height: 100%;
   background: linear-gradient(#e8e8e8, #e0dfde);
@@ -35,9 +30,9 @@ body{font-family: Raleway;background-color: white;text-align:center;background-i
 }
 
 .header {
-  margin-top: 10%;
+  z-index: 2;
 }
-.title{font-size: 6vw; color: #f9f9f9; font-weight: bold; text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);}
+.title{font-size: 6vw; color: #f2f2f2; font-family: "Raleway-Light"; text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);}
 
 .description {
   margin-top: 2vw;
@@ -160,19 +155,6 @@ li a {
 .achievements {
   text-align: left;
 }
-
-.Awrap {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  width: 60%;
-  --background-color: rgba(2, 229, 249, 0.3);
-  background-color: transparent;
-  box-sizing: border-box;
-  line-height: 1.45;
-  box-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);
-  text-align: left;
-  padding-top: 1vw;
-}
 .IMGLogo {
   max-height: 13vw;
   padding-top: 0.7vw;
@@ -188,6 +170,7 @@ li a {
 }
 .achievements.secondSub {
   margin: 0;
+  padding-bottom: 1vw;
 }
 .achievements.textContent {
   display: inline;
@@ -195,4 +178,55 @@ li a {
 .boxContent > .textContent {
     margin-left: 1vw;
 }
+.profilePic {
+  margin-top: 2vw;
+  border-radius: 50%;
+}
+.Awrap {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 70%;
+  --background-color: rgba(2, 229, 249, 0.3);
+  background-color: transparent;
+  box-sizing: border-box;
+  line-height: 1.45;
+  box-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);
+  text-align: left;
+  padding-top: 1vw;
+  height: auto;
+  min-height: 12vw;
+}
+.overlay{
+  min-height: 16vw;
+  margin: 10% auto 0; 
+  width: 40%;
+  --border: 0.2vw solid black;
+  background-color: rgba(0,0,0,0.65);
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-device-width: 600px) {
+  .overlay{
+    min-height: 30vw;
+    margin-top: 35%;
+    padding-top: 4vw;
+  }
+  ul {
+    height: 8vw;
+  }
+  li a {
+    line-height: 8vw;
+    font-size: 2.8vw;
+  }
+  .title {
+    font-size: 12vw;
+  }
+  .fa {
+    width: 7vw;
+    height: 7vw;
+  }
+  .icons {
+    font-size: 7vw;
 
+  }
+}
