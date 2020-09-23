@@ -1,235 +1,69 @@
 @font-face{font-family:"Raleway-Light";src:url(Raleway-Light.ttf)}
 *{margin:0;padding:0}
 html, body{height: 100%;width: 100%;}
-body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;background-color: white;text-align:center;}
-.bg {
-    background-image: url("media/bg.jpg");
-    min-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
-    background-position: 50% 50% ;
+body{font-family: bebas-neue, source-sans-pro, "Helvetica", sans-serif;text-align:center;
+  background-color: #001427;
+  background-color: #003567;
+
+  background-image: url("media/light-sketch.png");
 }
-.bg1 {
+.overlay{
+  min-height: 16vw;
+  margin: 0 auto 0;
+  padding: auto auto;
+  --border: 0.2vw solid black;
+  width: 60%;
   height: 100%;
-  background: linear-gradient(#e8e8e8, #e0dfde);
+  position: relative;
 }
-.wrapper{max-height: 100%; width: 100%; padding: 5% 0;}
-/*a {text-decoration: none;font-size: 4vw;display: inline-block;height: 0;vertical-align: middle; width: auto; height: auto;}
-*/
-.section {
-  min-height: 100%;
-
-}
-.sub-title {
-  padding-top: 4vw;
-  font-size: 3.5vw;
-  color: #404040;
-  text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);
-}
-
-.header {
-  z-index: 2;
-}
-.title{font-size: 6vw; color: #f2f2f2; font-family: "Raleway-Light"; text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);}
-
-.description {
-  margin-top: 2vw;
-  font-size: 2vw;
-}
+.title{font-size: 4vw; color: #ffffff; font-family: "Raleway-Light"; text-shadow: 0 0 1px rgb(0, 0, 0), 0 1px 2px rgba(0,0,0,0.45);}
 
 .socialmediaicons {
   width: 100%;
   height: auto;
-  margin: 2vw 0;
+  margin-top: 2vw;
+  font-size: 3vw;
+  text-shadow: 0 0 1px rgb(0, 0, 0), 0 1px 2px rgba(0,0,0,0.45);
 }
 .fa {
-  padding: 1.3vw;
-  font-size: 2.08vw;
-  width: 18px;
+  padding: 0.4vw;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
-  background: #404040;
-  color: white;
-  margin: 0 0.5vw;
-  transition: 0.3s;
+  border-radius: 5%;
+  color: #ffffff;
+  transition: 0.1s;
 }
 .fa:hover {
     opacity: 0.9;
-}
-.fa-linkedin:hover {
-    background: #007bb5;
+    color: #0091d5;
 }
 
-.fa-github:hover {
-  background: #b868c4;
-}
-.fa-envelope:hover {
-  background: #d1513a;
-}
-.fa-skype:hover {
-  background: #00aff0;
-}
-.fa-mobile:hover {
-  background: #2dcc0c;
-}
 .cv {
-  font-size: 1.6vw;
-  color: darkcyan;
+  font-size: 1.2vw;
+  color: rgb(33, 167, 167);
   font-weight: 300;
 }
-.displayBox {
-  margin-top: 2vw;
-  width: 60%;
-  height: 15vw;
-  display: inline-block;
-  background: rgba(214, 143, 87, 0.7);
-  box-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);
-  background-color: transparent;
-}
 
-.logo {
-  width: 30%;
-  max-height: 100%;
-  float: left;
-}
-
-.ICLogo {
-  margin-top: 0.5vw;
-}
-.boxContent {
-  text-align: left;
-  width: 65%;
-  height: 100%;
-  float: left;
-  padding-left: 1vw;
-}
-
-.secondSub {
-  font-size: 1.5vw;
-  color: #404040;
-  margin: 1vw;
-  margin-right: 0;
-}
-.textContent {
-  font-size: 1.3vw;
-}
-.navbar {
-  position: fixed;
-  font-size: 1.5vw;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 3vw;
-}
-
-li {
-    float: left;
-    height: 100%;
-    border-right: 1px solid white;
-    transition: 0.3s;
-
-}
-li:hover {
-  background-color: #555;
-}
-li:last-child {
-    border-right: none;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0.5vw 1.3vw;
-    text-decoration: none;
-}
-.achievements {
-  text-align: left;
-}
-.IMGLogo {
-  max-height: 13vw;
-  padding-top: 0.7vw;
-  box-sizing: border-box;
-}
-.academicAchievements .IMGLogo {
-  float: right;
+.wrap {
+  height: 60%;
   margin: 0;
-  padding-top: 0;
-  max-width: 35%;
-  margin-left: 1vw;
-  max-height: 8.33vw;
-}
-.achievements.secondSub {
-  margin: 0;
-  padding-bottom: 1vw;
-}
-.achievements.textContent {
-  display: inline;
-}
-.boxContent > .textContent {
-    margin-left: 1vw;
-}
-.profilePic {
-  margin-top: 2vw;
-  border-radius: 50%;
-}
-.Awrap {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  width: 70%;
-  --background-color: rgba(2, 229, 249, 0.3);
-  background-color: transparent;
-  box-sizing: border-box;
-  line-height: 1.45;
-  box-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.45);
-  text-align: left;
-  padding-top: 1vw;
-  height: auto;
-  min-height: 12vw;
-}
-.overlay{
-  min-height: 16vw;
-  margin: 10% auto 0;
-  width: 40%;
-  --border: 0.2vw solid black;
-  background-color: rgba(0,0,0,0.65);
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-device-width: 600px) {
-  .overlay{
-    min-height: 30vw;
-    margin-top: 35%;
-    padding-top: 4vw;
-  }
-  ul {
-    height: 8vw;
-  }
-  li a {
-    line-height: 8vw;
-    font-size: 2.8vw;
+  .overlay {
+    width: 85%;
   }
   .cv {
     font-size: 4vw;
   }
   .title {
-    font-size: 12vw;
+    font-size: 6vw;
   }
-  .fa {
-    width: 7vw;
-    height: 7vw;
-  }
+  
   .icons {
     font-size: 7vw;
 
